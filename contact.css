@@ -1,0 +1,296 @@
+
+/********/
+/* Body */
+/********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    animation: fadeIn 2s ease-out;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0b4550, #0b4550);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/**************/
+/* Body - End */
+/**************/
+
+/***************************/
+/* Website Title (REMOVED) */
+/***************************/
+.websiteTitle-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.websiteTitle {
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: transparent;
+    background-image: linear-gradient(135deg, #8cad07, #add702);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: fadeIn 2s ease-out;
+}
+/********************************/
+/* Website Title - End(REMOVED) */
+/********************************/
+
+/**********/
+/* Navbar */
+/**********/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-items {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar-items li {
+    margin: 0 20px;
+}
+
+.navbar-items li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-items li a:hover {
+    color: #add702; 
+}
+
+.navbar-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+.aboutElement {
+    border-bottom: 0px solid #8cad07;
+}
+
+.aboutElement li {
+    margin:0px;
+}
+
+.statutenText a{
+    font-size: 0.1rem;
+}
+
+.dropDownMenu {
+    position: absolute;
+    display:flex;
+    list-style: none;
+    text-align: start;
+    justify-content: start;
+    margin-top: 0.2rem;
+    height: 0rem;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.dropDownMenu li {
+    margin-top: 0.5rem;
+}
+
+.dropDownMenu li a {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+  
+.aboutElement:hover .dropDownMenu {
+    height: 2rem;
+    background-color: #272927;
+}
+
+.aboutElement:hover .aboutElementText{
+    border-bottom: 2px solid #add702;
+}
+
+.dropdown-arrow {
+    display: inline-block;
+    margin-left: 0.1rem; 
+    font-size: 0.8em;
+    transform: rotate(270deg);
+    transition: transform 0.3s ease; 
+}
+
+.aboutElement:hover .dropdown-arrow{
+  transform: rotate(90deg);
+}
+/****************/
+/* Navbar - End */
+/****************/
+
+/****************/
+/* Card Styling */
+/****************/
+.contact-Content{
+    display: flex;
+    padding: 0rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.contactCard-items{
+    background: linear-gradient(135deg, #1a3313, #5c6f56);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ff99cc;
+    border-radius: 1rem;
+}
+
+.contactCard-items img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+.contactCard-items li{
+    display: flex;
+    margin: 1rem;
+    padding: 0rem;
+    align-items: center;
+}
+
+.contactCard-items svg{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    flex-shrink: 0; 
+}
+/*********************/
+/* Card Styling - End*/
+/*********************/
+
+
+
+
+/**********/
+/* Footer */
+/**********/
+.footer {
+    background-color: #1c3d23;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    color: #fff;
+    margin-top: auto;
+    border-top: 2px solid #ff99cc;
+}
+
+.footeradress-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footeradress-items li {
+    margin: 10px;
+}
+
+.footeradress-items li a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footeradress-items li a:hover {
+    color: #ff99cc;
+}
+
+.footeradress-items li a svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.joinUs {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #add702;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.joinUs:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+/****************/
+/* Footer - End */
+/****************/
+
+/******************/
+/* Media Elements */
+/******************/
+@media (max-width: 768px) {
+    .footeradress-items {
+        display: flex;
+        justify-content: center;
+    }
+    .dropDownMenu{
+        position: relative;
+    }
+}
+
+@media (max-width:550px) {
+    .navbar-items{
+      display: grid;
+    }
+    .navbar-items li a {
+        margin: 0px;
+        font-size: 1rem;
+    }
+}
+/************************/
+/* Media Elements - End */
+/************************/
+
+/**************/
+/* Animations */
+/**************/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }   
+}
+/*******************/
+/* Animations - End*/
+/*******************/

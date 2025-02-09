@@ -17,7 +17,7 @@ spec:
       selfHeal: true
       prune: true
     syncOptions:
-      - allowEmpty: true
+      - allowEmpty=true
   imageUpdater:
     enabled: true
     updateStrategy: latest # Or 'semver' if you use semantic versioning

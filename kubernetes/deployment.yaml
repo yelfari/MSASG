@@ -1,0 +1,37 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: msag-website
+  namespace: msag-website-namespace
+spec:
+  replicas: 2 # Adjust as needed
+  selector:
+    matchLabels:
+      app: msag-website
+  template:
+    metadata:
+      labels:
+        app: msag-website
+    spec:
+      containers:
+        - name: my-container
+          image: yelfari/msag-website:latest # Initial tag, Argo CD will update this
+          ports:
+            - containerPort: 8080 # Your application's port
+
+---
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: msag-website-service
+  namespace: msag-website-namespace
+spec:
+  selector:
+    app: msag-website
+  ports:
+    - protocol: TCP
+      port: 80 # External port
+      targetPort: 8080 # Container port
+  type: LoadBalancer # Or ClusterIP if you're not using a cloud provider

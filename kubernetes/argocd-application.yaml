@@ -1,0 +1,26 @@
+# argocd-application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+spec:
+  project: default # Or your Argo CD project
+  source:
+    repoURL: https://github.com/yelfari/MSASG.git # URL of your Git repo
+    targetRevision: HEAD # Track the latest commit
+    path: kubernetes # Path to your manifests in the repo
+  destination:
+    server: https://kubernetes.default.svc # Your Kubernetes API server
+    namespace: msag-website-namespace # Target namespace
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+    syncOptions:
+      - allowEmpty: true
+  imageUpdater:
+    enabled: true
+    updateStrategy: latest # Or 'semver' if you use semantic versioning
+    # Optional but recommended for better control:
+    repositories:
+      - name: yelfari/msag-website

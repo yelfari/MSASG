@@ -1,6 +1,6 @@
 FROM node:20.18-alpine
 
-WORKDIR /usr/src/path/backend
+WORKDIR /usr/src/path
 
 COPY package*.json ./
 
@@ -11,4 +11,4 @@ COPY . .
 
 EXPOSE 3001
 
-CMD ["node", "server.js"]
+CMD ["node", "backend/server.js"]

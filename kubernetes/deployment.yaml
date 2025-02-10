@@ -5,7 +5,7 @@ metadata:
   name: msag-website
   namespace: msag-website-namespace
 spec:
-  replicas: 1 # Adjust as needed
+  replicas: 3 # Adjust as needed
   selector:
     matchLabels:
       app: msag-website

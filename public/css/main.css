@@ -174,7 +174,8 @@ body {
 .topCaption {
     text-align: center;
     font-size: clamp(1rem, 3vw, 2.5rem);
-    margin: 100px auto 50px auto;
+    margin: 500px auto 50px auto;
+    
     font-style: italic;
     color: #c4e7d2;
 }

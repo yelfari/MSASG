@@ -18,6 +18,14 @@ app.use((req, res, next) => {
     next(); // Continue processing the request
 });
 
+app.get('/info', (req, res) => {
+    const podName = process.env.POD_NAME || 'unknown';
+    const podNamespace = process.env.POD_NAMESPACE || 'unknown';
+    const podIP = process.env.POD_IP || 'unknown';
+
+    res.send(`This web app is running from pod: ${podName}, namespace: ${podNamespace}, IP: ${podIP}`);
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
     console.log("hii");

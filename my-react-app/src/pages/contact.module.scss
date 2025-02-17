@@ -1,0 +1,56 @@
+/****************/
+/* Card Styling */
+/****************/
+.mainContent_container{
+    animation: fadeIn 2s ease-out;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+.contactInfo{
+    display: block;
+    border: 2px solid #add702;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 4rem;
+    padding: 2rem;
+    align-items: center;
+    align-content: center;
+}
+
+.contactItems{
+    display: flex;
+  margin: 1rem;
+  padding: 0rem;
+  align-items: center;
+}
+
+.contactItems svg{
+    margin-right: 1rem;
+}
+
+
+/*********************/
+/* Card Styling - End*/
+/*********************/
+
+
+/**************/
+/* Animations */
+/**************/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }   
+}
+/*******************/
+/* Animations - End*/
+/*******************/

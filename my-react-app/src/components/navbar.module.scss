@@ -1,0 +1,115 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-items {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar-items li {
+    margin: 0 20px;
+}
+
+.navbar-items li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-items li a:hover {
+    color: #add702; 
+}
+
+.aboutElement {
+    border-bottom: 0px solid #8cad07;
+}
+
+.aboutElement li {
+    margin:0px;
+}
+
+.statutenText a{
+    font-size: 0.1rem;
+}
+
+.dropDownMenu {
+    position: relative; //change to absolute if you dont want that the navbar expands
+    display:flex;
+    text-align: start;
+    justify-content: start;
+    margin-top: 0.2rem;
+    height: 0rem;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.dropDownMenu li {
+    margin-top: 0.5rem;
+}
+
+.dropDownMenu li a {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+  
+.aboutElement:hover .dropDownMenu {
+    height: 2rem;
+}
+
+.aboutElement:hover .aboutElementText{
+    border-bottom: 2px solid #add702;
+}
+
+.dropdown-arrow {
+    display: inline-block;
+    margin-left: 0.1rem; 
+    font-size: 0.8em;
+    transform: rotate(270deg);
+    transition: transform 0.3s ease; 
+}
+
+.aboutElement:hover .dropdown-arrow{
+  transform: rotate(90deg);
+}
+
+
+@media (max-width: 768px){
+    .navbar{
+        display:flex;
+        justify-content: center;
+        
+      
+    }
+    .navbar-items{
+        margin: 0.5rem;
+        display:block;
+        width: 100%;
+        
+        
+    }
+    .navbar-items li{
+        margin-top: 0.5rem;
+        text-align: center;   
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+
+    }
+
+
+}

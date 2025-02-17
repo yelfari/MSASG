@@ -1,0 +1,103 @@
+/*********/
+/* Quote */
+/*********/
+.topCaption {
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    margin: 20px auto 50px auto;
+    font-style: bold;
+    color: #c4e7d2;
+}
+/***************/
+/* Quote - End */
+/***************/
+
+/****************/
+/* Text Content */
+/****************/
+.mainContent {
+    animation: fadeIn 2s ease-out;
+    padding: 50px 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #f4f4f4;
+
+    max-width: 900px;
+    margin: 0 auto;
+}
+/*********************/
+/* Text Content -End */
+/*********************/
+
+/****************/
+/* Card Styling */
+/****************/
+.cardContent {
+    padding: 50px 20px;
+}
+
+.cardContent-items {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.card {
+    background: linear-gradient(135deg, #33ccff, #ff99cc); 
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: #f4f4f4;
+    margin-bottom: 15px;
+}
+
+.card-button {
+    background-color: #ff99cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #ff6699;
+}
+/*********************/
+/* Card Styling - End*/
+/*********************/
+
+/**************/
+/* Animations */
+/**************/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }   
+}
+/*******************/
+/* Animations - End*/
+/*******************/

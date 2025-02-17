@@ -1,0 +1,83 @@
+.footer{
+    display:none;
+}
+/****************/
+/* Text Content */
+/****************/
+.mainContent{
+    margin-top: 3rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.mainContentTitle{
+    font-size: 4rem;
+    border-bottom: 1px solid #add702;
+    margin: 1rem;
+}
+
+.mainContentText{
+    font-size: 1rem;
+    margin: 1rem 0rem 5rem 0rem; /*top - right - bottom - left*/
+}
+/*********************/
+/* Text Content -End */
+/*********************/
+
+/****************/
+/* Card Styling */
+/****************/
+.cardContent {
+    padding: 50px 20px;
+}
+
+.cardContentItems {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    animation: fadeUp 1s ease-out;
+}
+
+.card {
+    background: linear-gradient(135deg, #33ccff, #ff99cc); 
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/*********************/
+/* Card Styling - End*/
+/*********************/
+
+/**************/
+/* Animations */
+/**************/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }   
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*******************/
+/* Animations - End*/
+/*******************/

@@ -1,0 +1,73 @@
+.mainContent{
+
+    animation: fadeIn 2s ease-in;
+}
+
+/****************/
+/* Text Content */
+/****************/
+.statutTitel{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #add702;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.0);
+}
+
+.statutList{
+    margin-left: auto;
+    margin-right:auto;
+    padding: 1rem;
+    width: 40%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.0);
+}
+
+.statutList li{
+    padding: 1rem;
+}
+
+.articleList{
+    padding:1rem;
+    margin:1rem;
+    list-style: none;
+}
+
+.articleList li{
+    padding:0.1rem;
+    margin:0.1rem;
+    list-style: none;
+}
+
+.articleNumber{
+    text-decoration: underline;
+}
+/*********************/
+/* Text Content -End */
+/*********************/
+
+/******************/
+/* Media Elements */
+/******************/
+@media (max-width: 1160px) {
+    .statutList{
+        width: 90%;
+    }
+}
+/************************/
+/* Media Elements - End */
+/************************/
+
+/**************/
+/* Animations */
+/**************/
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+/*******************/
+/* Animations - End*/
+/*******************/

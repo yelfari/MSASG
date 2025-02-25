@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Events.module.scss';
+import styles from './events.module.scss';
 import MyCardGrid from '../components/mygrid';
 import MSAG from '../assets/images/Logos/MSAG1.png'
 

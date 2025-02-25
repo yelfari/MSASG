@@ -175,7 +175,7 @@ const MyCardGrid: React.FC = () => {
               }}
               onMouseLeave={() => {
                 // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-                useMyCardStates&&!expandModifiedCard ? setHoveredCardId(null) : null;
+                useMyCardStates && !expandModifiedCard ? setHoveredCardId(null) : null;
               }}
               className="gridCard"
               style={{

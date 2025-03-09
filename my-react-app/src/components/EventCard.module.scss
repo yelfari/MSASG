@@ -1,0 +1,48 @@
+.parentContainer{
+        display: flex;
+        width: 70%;
+        justify-content: space-between; 
+        margin-left: auto;
+        margin-right: 2rem;
+        overflow: hidden;
+        border: 1px solid white;     
+        margin-bottom: 1rem;
+}
+
+.textContainer{
+    text-align: start;
+    
+}
+
+.titleText{
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem; 
+    color: #9EEB47;
+}
+
+.dateText{
+    font-size: small;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.descriptionText{
+    font-size: medium;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 10rem;
+    word-wrap: break-word;
+    word-wrap: normal;
+}
+
+.locationText{
+    margin-left: 1rem;
+    font-size: small;
+    font-weight: lighter;
+}
+.eventImage{
+    justify-content: end;
+    width: 50%;
+
+}

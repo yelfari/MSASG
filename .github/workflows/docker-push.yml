@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  #Branch I want to push it into
+      - main 
 
 jobs:
   build-and-push:

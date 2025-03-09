@@ -1,3 +1,17 @@
+/************/
+/* titlePic */
+/************/
+.titlePicture {
+    width: 100%;
+    margin: 20px auto 50px auto;
+    left: 0px;
+    right: 0px;
+}
+/******************/
+/* titlePic - End */
+/******************/
+
+
 /*********/
 /* Quote */
 /*********/
@@ -16,13 +30,26 @@
 /* Text Content */
 /****************/
 .mainContent {
+    
     animation: fadeIn 2s ease-out;
-    padding: 50px 20px;
+    //padding: 50px 20px;
     font-size: 1.2rem;
     text-align: center;
     color: #f4f4f4;
+    //max-width: 900px;
+    margin: 0 auto;
 
-    max-width: 900px;
+}
+
+.videoContent{
+    background-image: url("../assets/images/hog-rider-gif-5.gif");
+    background-size: cover;
+    border: 1px solid rgb(77, 158, 108);
+    //padding: 50px 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #f4f4f4;
+    max-width: 70%;
     margin: 0 auto;
 }
 /*********************/

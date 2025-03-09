@@ -5,7 +5,7 @@ metadata:
   name: msag-website
   namespace: msag-website-namespace
 spec:
-  replicas: 10 # Adjust as needed
+  replicas: 10 
   selector:
     matchLabels:
       app: msag-website
@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: my-container
-          image: yelfari/msag-website:latest # Initial tag, Argo CD will update this
+          image: yelfari/msag-website:latest 
           ports:
-            - containerPort: 8080 # Your application's port
+            - containerPort: 8080 
           env:
             - name: POD_NAME
               valueFrom:

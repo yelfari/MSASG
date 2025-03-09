@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, {useState} from "react";
 import "./mygrid.scss";
 import msagImg1 from "../assets/images/MSAG_IMG1.png";
 import msagImg2 from "../assets/images/MSAG_IMG2.png";
@@ -148,17 +148,16 @@ const MyCardGrid: React.FC = () => {
   ];
 
   const [hoveredCardId, setHoveredCardId] = useState<number | null>(null);
-  const [expandModifiedCard, setExpandModifiedCard] = useState<boolean | null>(
-    null
-  );
+  const [expandModifiedCard, setExpandModifiedCard] = useState<boolean | null>(null);
   const [useMyCardStates, setUseMyCardStates] = useState<boolean | null>(null);
+
   return (
+    <div className= "mainContainer">
     <main className="gridContainer">
       {cards.map((card) => {
         
         const isHovered = card.id === hoveredCardId;
-        const isModified =
-          hoveredCardId !== null && card.id === hoveredCardId + 3;
+        const isModified = hoveredCardId !== null && card.id === hoveredCardId + 3;
         return (
           <div key={card.id} className="gridItem">
             <div
@@ -180,13 +179,10 @@ const MyCardGrid: React.FC = () => {
               className="gridCard"
               style={{
                 position: isHovered ? "relative" : "relative",
-
                 width: "100%",
-                height: isHovered ? "27rem" : "100%",
-
-                transform: isModified ? "translateY(350%) scale(1.0)" : "none",
+                height: isHovered ? "20rem" : "100%",
+                transform: isModified ? "translateY(360%) scale(1.0)" : "none",
                 transition: "all 0.5s ease-in-out",
-
                 ...(isModified && {
                   backgroundColor: "#0b4550",
                   height: "5rem",
@@ -202,7 +198,7 @@ const MyCardGrid: React.FC = () => {
                   width: "100%",
                   height: "100%",
                   objectFit: isHovered ? "contain" : "cover",
-                  transform: "scale(1.1)",
+                  transform: "scale(1.0)",
                   transition: "transform 0.5s ease-in-out", // Smooth transition for scaling
                 }}
               />
@@ -221,7 +217,7 @@ const MyCardGrid: React.FC = () => {
                   ...(isHovered && {
                     display: "flex",
                     position: "relative",
-                    top: "-400px",
+                    top: "-200px",
                     opacity: 0.5,
                   }),
                 }}
@@ -239,7 +235,7 @@ const MyCardGrid: React.FC = () => {
           </div>
         );
       })}
-      {/* Conditionally render the ExpandedCard component */}
+      {/* render expandedCard if modifier is applied */}
 
       {expandModifiedCard && (
         <ExpandedCard
@@ -250,6 +246,7 @@ const MyCardGrid: React.FC = () => {
         />
       )}
     </main>
+    </div>
   );
 };
 

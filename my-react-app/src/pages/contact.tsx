@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './contact.module.scss';
-import MapComponent from '../components/map';
+import MapComponent from '../components/Map';
 import HomeIcon from '@mui/icons-material/Home';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';

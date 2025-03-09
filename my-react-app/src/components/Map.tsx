@@ -1,6 +1,7 @@
+import { ReactElement } from "react";
 
 
-const MapComponent = () => {
+const MapComponent = (): ReactElement | undefined => {
   return (
       <div style={{ position: "relative", width: "90%", maxWidth: "800px"}}>
         <iframe

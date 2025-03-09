@@ -23,7 +23,7 @@
 .navbar-items li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     margin: 20px;
     transition: color 0.3s ease;
 }
@@ -96,13 +96,15 @@
       
     }
     .navbar-items{
+        
         margin: 0.5rem;
-        display:block;
+        
         width: 100%;
         
         
     }
     .navbar-items li{
+        
         margin-top: 0.5rem;
         text-align: center;   
         margin-left: 0rem;

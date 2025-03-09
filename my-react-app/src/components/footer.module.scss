@@ -2,21 +2,19 @@
 /* Footer */
 /**********/
 .footer {
-    background-color: #ff8c08;
-    padding: 0.5rem 0.5rem;
-    
-    min-height: 1vh;
-
+    background-color: #1c3d23;
+    padding: 0.5rem;
     text-align: center;
     color: #fff;
-    margin-top: -200px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: auto; /* This pushes the footer to the bottom */
+    /* Remove these properties:
     position: absolute;
-  width: 100%;
-
-  bottom: -340px;
-
-}
+    width: 100%;
+    bottom: -340px;
+    min-height: 1vh;
+    margin-top: -200px; */
+  }
 
 .footeradress-items {
     list-style: none;
@@ -60,7 +58,7 @@
     margin-left: 1rem;
     padding: 0.5rem;
     height: 50%;
-
+    align-self: center;
 
 
 }
@@ -75,12 +73,18 @@
 /****************/
 
 @media (max-width: 768px) {
+    .footer{
+        bottom: -800px;
+    }
     .footeradress-items li a svg {
         width: 2rem;
         height: 2rem;
     }
     .joinUs{
         font-size: 1rem;
+    }
+    .footeradress-items li{
+        margin: 5px;
     }
     
 }

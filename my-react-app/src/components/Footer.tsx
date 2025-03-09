@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styles from './footer.module.scss';
-import TikTokIcon from './tiktok';
+import TikTokIcon from './Tiktok';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-const Footer: React.FC = () => {
+export default function Footer(): ReactElement {
   return (
     <footer className={styles.footer}>
       
@@ -36,6 +36,4 @@ const Footer: React.FC = () => {
       </ul>
     </footer>
   );
-};
-
-export default Footer;
+}

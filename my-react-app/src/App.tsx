@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'; 
-import Navbar from './components/navbar';
-import Footer from './components/footer';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/home'; 
 import Events from './pages/events';
 import Contact from './pages/contact';
@@ -17,14 +17,12 @@ const App: React.FC = () => {
   );
 };
 
-const AppWithRouter: React.FC = () => {
-
+function AppWithRouter() {
   const location = useLocation();
   const shouldShowFooter = location.pathname !== '/statuten';
 
   return (
     <div>
-      
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -36,6 +34,7 @@ const AppWithRouter: React.FC = () => {
       {shouldShowFooter && <Footer />}
     </div>
   );
-};
+}
+
 
 export default App;

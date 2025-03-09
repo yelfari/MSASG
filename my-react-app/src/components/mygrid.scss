@@ -1,20 +1,28 @@
+.mainContainer{
+  display:flex;
+  flex-wrap: wrap;
+}
 .gridContainer {
   display: grid;
-  width: 40%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Limit minimum width */
-  row-gap: 2rem;
-  column-gap: 1rem;
-
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  row-gap: 0rem;
+  column-gap: 0rem;
   overflow: scroll;
   scroll-behavior: smooth;
-  height: 200%;
+  height: 90%;
   scrollbar-width: none;
-  //border: 2px solid #18742f;
-
- 
+  margin-bottom: 2rem;
 }
+/* @media (max-width: 720px){
+  .gridContainer {
+    grid-template-columns: repeat(1, minmax(300px, 1fr)); 
+    width: 70%;
+  }
+
+} */
 
 .gridItem {
   position: relative;
@@ -23,8 +31,6 @@
   margin-top: 0.5rem;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
-  
- 
 }
 
 .gridCard {

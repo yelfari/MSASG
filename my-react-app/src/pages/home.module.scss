@@ -4,13 +4,12 @@
 .titlePicture {
     width: 100%;
     margin: 20px auto 50px auto;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
 }
 /******************/
 /* titlePic - End */
 /******************/
-
 
 /*********/
 /* Quote */
@@ -30,93 +29,141 @@
 /* Text Content */
 /****************/
 .mainContent {
-    
     animation: fadeIn 2s ease-out;
-    //padding: 50px 20px;
     font-size: 1.2rem;
     text-align: center;
     color: #f4f4f4;
-    //max-width: 900px;
     margin: 0 auto;
-
 }
 
-.videoContent{
+.videoContent {
     background-image: url("../assets/images/hog-rider-gif-5.gif");
     background-size: cover;
     border: 1px solid rgb(77, 158, 108);
-    //padding: 50px 20px;
     font-size: 1.2rem;
     text-align: center;
     color: #f4f4f4;
     max-width: 70%;
     margin: 0 auto;
 }
+
+.videoContentText {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.videoContentDescription {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    width: 55%;
+    word-break: break-word;
+    text-align: left;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+@media (max-width: 720px) {
+    .videoContent{
+        max-width: 90%; 
+        background-size: cover;
+    }
+    .videoContentText{
+        margin-bottom: 2rem;
+    }
+    .videoContentDescription {
+ 
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
 /*********************/
 /* Text Content -End */
 /*********************/
 
-/****************/
-/* Card Styling */
-/****************/
-.cardContent {
-    padding: 50px 20px;
+/**********************/
+/* Title and Button */
+/**********************/
+.whatWeDoTitle {
+    margin: 4rem;
 }
 
-.cardContent-items {
-    list-style: none;
+.descriptionText {
+    word-break: break-word;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.eventsButton {
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 2rem;
+    font-weight: bolder;
+    margin-bottom: 10rem;
+}
+
+/*********************/
+/* Become a Member Section */
+/*********************/
+.becomeMemberSection {
+    background-color: #1C3D23;
+    margin: 2rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-
-}
-
-.card {
-    background: linear-gradient(135deg, #33ccff, #ff99cc); 
-    padding: 30px;
     border-radius: 15px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.card:hover {
-    transform: translateY(-20px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+.becomeMemberTitle {
+    margin: 4rem;
+    padding: 2rem;
+    text-align: start;
+    border-right: 1px solid white;
 }
 
-.card-title {
-    font-size: 1.5rem;
-    color: #fff;
-    margin-bottom: 15px;
+.becomeMemberContent {
+    display: block;
 }
 
-.card-text {
-    color: #f4f4f4;
-    margin-bottom: 15px;
+.memberDescription {
+    margin: 2rem;
 }
 
-.card-button {
-    background-color: #ff99cc;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+.joinFormButton {
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 2rem;
+    font-weight: bolder;
 }
 
-.card-button:hover {
-    background-color: #ff6699;
+@media (max-width: 720px) {
+    .becomeMemberSection{
+        display: block;
+        width: 90%;
+        margin: 1rem;
+    }
+    .becomeMemberTitle{
+        border: 0px;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .joinFormButton{
+        
+    }
+    
 }
-/*********************/
-/* Card Styling - End*/
-/*********************/
 
-/**************/
+/**********************/
 /* Animations */
-/**************/
+/**********************/
 @keyframes fadeIn {
     0% {
         opacity: 0;

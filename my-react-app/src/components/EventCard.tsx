@@ -17,8 +17,6 @@ const Eventcard: React.FC<EventCardProps> = ({title, description, date, location
             <div className={styles.textContainer} style={{}}>
                 
                 <h1 className={styles.titleText}>{title}</h1>
-                
-
                 <p className={styles.dateText}>{date}</p>
                 <p className={styles.descriptionText}>{description? description: undefined}</p>
                 <div style={{display:"flex", justifyContent: "space-between"}}>

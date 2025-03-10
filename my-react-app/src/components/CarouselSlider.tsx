@@ -51,80 +51,55 @@ const CarouselSlider: React.FC = ()  => {
     }
 
     return (
-        <main className={styles.parentContainer} style={{
+        <main className={styles.parentContainer}>
 
-           
-        }}>
+        <div className={styles.carouselButton}>
         <IconButton
+            className={styles.carouselButton}
             onClick={() => {
             //moveElementLeft()
             setActiveIndex((activeIndex - 1 < 0)? imageElementList.length - 1 : activeIndex - 1);
-            }}
-                style={{
-                height: '2rem',
-                alignSelf: 'center',
             }}>
             <ChevronLeft fontSize="large" />
         </IconButton>
+        </div> 
 
-        <div className= "carouselParentContainer"  style={{
-            overflow: "hidden"
-        }}>
+        <div className= {styles.carouselParentContainer}>
+        <div className= {styles.carouselContainer}>
 
-        <div className= "carouselContainer" style={{
-            display: "flex",
-            transition: "transform 1s ease-in-out"
-
-            
-        }}>
         {imageElementList.map((card) => 
         {
+
             return(
-                
-                <div key= {card.id} className={styles.carouselElement} style={{
-                        display: "block",
-                        minHeight: "500px",
-                        
-                        scale: (card.id == activeIndex)? "1" : "0.4",
-                        transition: "scale 1s ease-in-out",
-                        //border: "2px solid white",
-                        padding: "1rem"
-                }}>
-                    
-                    <img src= {card.image} style={{
-                        width: "200px",
-                        height: "200px",
-                        overflow: "hidden",
-                        borderRadius: "50%"
-
-                    }}/>
-                    <h1 style={{fontWeight: "bold", marginBottom: "1rem", color: "#9EEB47"}}>{card.title}</h1>
-                    <p>{card.description}</p>
+                <div key={card.id} className={`${styles.carouselElement} ${card.id === activeIndex ? styles.active : ""}`}>
+                <img
+                    src={card.image}
+                    alt={card.title}
+                    className={styles.carouselImage}
+                />
+                <h1 className={styles.carouselTitle}>{card.title}</h1>
+                <p className={styles.carouselDescription}>{card.description}</p>
                 </div>
-                
-            )
-        }
-        )
-        }
-        </div>
+            );
+
+        })}
 
         </div>
+        </div>
 
+        <div className={styles.carouselButton}>
         <IconButton
+            
             onClick={() => {
             //moveElementRight()
             setActiveIndex((activeIndex + 1) % imageElementList.length);
-            }}
-                style={{
-                height: '2rem',
-                alignSelf: 'center',
             }}>
             <ChevronRight fontSize="large" />
         </IconButton>
-        </main>
+        </div>  
 
+        </main>
      );
-    
 };
 
 export default CarouselSlider;

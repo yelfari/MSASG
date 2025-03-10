@@ -1,0 +1,43 @@
+.mainContainer{
+    background-color: rgb(6, 43, 43);
+    
+}
+
+.parentContainer{
+    display: flex;
+    margin: 2rem;
+    justify-content: space-evenly;
+}
+
+.elementContainer{
+    margin: 1rem;
+    padding: 10px;
+
+
+}
+
+@media (max-width: 720px){
+    .mainContainer{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: rgb(42, 48, 48);
+        padding: 1rem;
+
+    }
+    
+    .parentContainer{
+        display: block;
+        margin: 2rem;
+
+    
+    }
+    
+    .elementContainer{
+     
+        margin: 1rem;
+     
+       
+    
+    }
+    
+}

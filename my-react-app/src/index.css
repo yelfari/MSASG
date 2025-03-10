@@ -69,3 +69,34 @@ body {
 /*******************/
 /* Animations - End*/
 /*******************/
+
+
+
+
+/*********/
+/* Main Title (h1) */
+/*********/
+h1 {
+  font-size: clamp(2.5rem, 5vw, 3rem); /* Between 2.5rem and 3rem, scaling with screen width */
+  line-height: 1.2;
+  color: #9EEB47;
+}
+
+/*********/
+/* Paragraph (p) */
+/*********/
+p {
+  font-size: clamp(1rem, 2vw, 1.2rem); /* Between 1rem and 1.2rem, scaling with screen width */
+  line-height: 1.6;
+}
+
+/* Media Query for Screens with max-width of 720px */
+@media (max-width: 720px) {
+  h1 {
+    font-size: 2rem; /* Adjust h1 size for mobile screens */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust paragraph size for mobile screens */
+  }
+}

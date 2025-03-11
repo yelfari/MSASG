@@ -19,9 +19,11 @@ const Eventcard: React.FC<EventCardProps> = ({title, description, date, location
                 <h1 className={styles.titleText}>{title}</h1>
                 <p className={styles.dateText}>{date}</p>
                 <p className={styles.descriptionText}>{description? description: undefined}</p>
-                <div style={{display:"flex", justifyContent: "space-between"}}>
-                <p className={styles.locationText}>{location}</p> 
-                <Button variant="outlined" style={{marginRight: "1rem"}}>Anmelden</Button>
+                <div className={styles.locationButtonContainer}>
+                    <p className={styles.locationText}>{location}</p>
+                    <div className={styles.eventButton}>
+                    <Button  variant="outlined">Anmelden</Button>
+                    </div> 
                 </div>
             </div>
             <img src={image? image : undefined} alt="" className={styles.eventImage}/>

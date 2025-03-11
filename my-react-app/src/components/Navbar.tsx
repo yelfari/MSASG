@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
             About <span className={styles['dropdown-arrow']}>&lt;</span>
           </Link>
           <ul className={styles.dropDownMenu}>
-            <li><Link to="/statuten" className={styles.statutenText}>- Statuten</Link></li>
+            <li><Link to="/statuten" className={styles.statutenText}>Statuten</Link></li>
           </ul>
         </li>
       </ul>

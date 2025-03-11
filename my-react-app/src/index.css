@@ -11,39 +11,10 @@ body {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(135deg, #0b4550, #0b4550);
   color: #fff;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 /**************/
 /* Body - End */
 /**************/
-
-/******************/
-/* Media Elements */
-/******************/
-@media (max-width: 768px) {
-  .footeradress-items {
-      display: flex;
-      justify-content: center;
-  }
-  .dropDownMenu{
-      position: relative;
-  }
-}
-
-@media (max-width:550px) {
-  .navbar-items{
-    display: grid;
-  }
-  .navbar-items li a {
-      margin: 0px;
-      font-size: 1rem;
-  }
-}
-/************************/
-/* Media Elements - End */
-/************************/
 
 /**************/
 /* Animations */
@@ -70,9 +41,6 @@ body {
 /* Animations - End*/
 /*******************/
 
-
-
-
 /*********/
 /* Main Title (h1) */
 /*********/
@@ -90,13 +58,12 @@ p {
   line-height: 1.6;
 }
 
-/* Media Query for Screens with max-width of 720px */
 @media (max-width: 720px) {
   h1 {
-    font-size: 2rem; /* Adjust h1 size for mobile screens */
+    font-size: 2rem; 
   }
 
   p {
-    font-size: 1rem; /* Adjust paragraph size for mobile screens */
+    font-size: 1rem; 
   }
 }

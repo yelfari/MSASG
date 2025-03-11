@@ -126,6 +126,7 @@
     padding: 2rem;
     text-align: start;
     border-right: 1px solid white;
+    box-shadow: 10px 0 7px -7px #888; /* Adjust the horizontal offset */
 }
 
 .becomeMemberContent {
@@ -150,10 +151,17 @@
         margin: 1rem;
     }
     .becomeMemberTitle{
+        
         border: 0px;
         text-align: center;
         margin: 1rem;
+   
         padding: 1rem;
+      
+        box-shadow: 0 5px 5px -5px #cfc9c9; /* Adjust the horizontal offset */
+    }
+    .descriptionText{
+        width: 80%;
     }
     .joinFormButton{
         
